@@ -47,3 +47,24 @@ The model uses 7 key clinical features to estimate heart disease risk:
 
 ---
 
+## 📁 Project Structure
+
+```text
+CardioPulse-AI/
+├── model/
+│   ├── data/
+│   │   └── cardio_dataset.csv         # Training dataset
+│   ├── models/                        # Saved checkpoint models
+│   ├── scaler_data.sav                # MinMaxScaler for inputs
+│   ├── scaler_target.sav              # MinMaxScaler for target
+│   └── training_notebook.ipynb        # Neural Network training script
+│
+└── webapp/
+    ├── images/                        # UI screenshots for README
+    ├── static/
+    │   └── style.css                  # UI Stylesheet
+    ├── templates/
+    │   ├── patient_details.html       # Input form page
+    │   └── patient_results.html       # Risk level display page
+    ├── main.py                        # Flask server logic
+    └── webapp_requirements.txt        # Web app dependencies
